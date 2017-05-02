@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="day1/demo/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+	    *{
+	    	margin: 0;padding: 0;list-style: none;
+	    }
+		.ul1{
+			
+			height: 40px;	
+		}
+		.ul1 li{
+			width: 250px;
+			height: 40px;
+			border: 1px solid black;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			float: left;
+			
+			
+		}
+		.ul2{
+			width: 1006px;
+			height: 400px;
+			border: 1px solid #CCCCCC;
+			
+		}
+		.ul2 li{
+			width:1006px ;
+			height: 400px;
+			display: none;
+			text-align: center;
+			line-height: 200px;
+			font-size: 30px;
+		}
+		.red{
+			background: #CCCCCC;
+			
+		}
+		
+	</style>
+	<body>
+		<ul class="ul1">
+			<li class="red">Web研发中心</li>
+			<li>Java中心研发</li>
+			<li>UI全践设计师</li>
+			<li>Phppapapa</li>
+		</ul>
+		<ul class="ul2">
+			<li style="display: block;">Web研发中心
+			<p>学什么 学前端</p>
+			</li>
+			<li>Java中心研发
+			<p>学什么 学Java</p>
+			</li>
+			<li>UI全践设计师
+			<p>学什么 学UI</p>
+			</li>
+			<li>Phppapapa
+			<p>学什么 学Php</p>
+			</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+	   
+		$(".ul1 li").click(function(){
+			
+			var i=$(this).index()
+			$(this).addClass('red').siblings().removeClass('red');
+		
+            $('.ul2 li').eq(i).show().siblings().hide();
+			
+
+			
+		})
+//		$(".ul1 li:eq(0)").mouseleave(function(){
+//			$(this).css("background","")
+//			$(".ul2 li:eq(0)").hide();
+//		})
+	</script>
+</html>

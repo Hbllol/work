@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="day1/demo/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		我已阅读<input type="checkbox" name="" id="b1" value="" />
+		<input type="button" name="" id="b2" value="提交" />
+	</body>
+	<script type="text/javascript">
+	
+	
+       	$('#b2').click(function(){
+       		if($("#b1").prop("checked")){
+       			alert("已提交")
+       		}else{
+       			alert('请勾选')
+       		}  		
+       	})
+
+    
+		
+	</script>
+</html>

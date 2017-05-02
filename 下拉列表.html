@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="day1/demo/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+	    *{margin: 0;padding: 0;list-style: none;}
+		#tite{
+			width: 300px;
+			height: 600px;
+			background: #2B2F3E;
+			color: #CCCCCC;
+			font-weight: bolder;
+		}
+		#tite li{
+			width: 300px;
+			height: 50px;
+			line-height: 50px;
+			text-indent: 30px;
+			border-bottom: 1px solid #666666;
+		}
+		.li:hover{
+			background: orangered;
+		}
+		.titein{
+			
+			display: none;
+		}
+		.titein li{
+			width: 300px;
+			height: 30px;
+			color: white;
+		}
+		.titein li:hover{
+			background: #666666;
+			
+		}
+	</style>
+	<body>
+		<ul id="tite">
+			<li class="li">核心</li>
+			<ul class="titein">
+				<li>1ss</li>
+				<li>11ss</li>
+				<li>111ss</li>
+			</ul>
+			<li class="li">选择器</li>
+			<ul class="titein">
+				<li>2ss</li>
+				<li>22ss</li>
+				<li>222ss</li>
+			</ul>
+			<li class="li">属性</li>
+			<ul class="titein">
+				<li>3ss</li>
+				<li>33ss</li>
+				<li>333ss</li>
+			</ul>
+			<li class="li">CSS</li>
+			<ul class="titein">
+				<li>4ss</li>
+				<li>44ss</li>
+				<li>444ss</li>
+			</ul>
+			<li class="li">事件</li>
+			<ul class="titein">
+				<li>5ss</li>
+				<li>555ss</li>
+				<li>5555ss</li>
+			</ul>
+			<li class="li">效果</li>
+			<ul class="titein">
+				<li>66ss</li>
+				<li>666ss</li>
+				<li>6666ss</li>
+			</ul>
+			<li class="li">工具</li>
+			<ul class="titein">
+				<li>000ss</li>
+				<li>00000ss</li>
+				<li>0000000ss</li>
+			</ul>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		$("#tite .li:eq(0)").click(function(){
+          $('.titein:eq(0)').toggle()
+			
+        
+			
+		})
+		$(".li:eq(1)").click(function(){
+			$('.titein:eq(1)').toggle()
+		})
+		$(".li:eq(2)").click(function(){
+			$('.titein:eq(2)').toggle()
+		})
+		$(".li:eq(3)").click(function(){
+			$('.titein:eq(3)').toggle()
+		})
+		$(".li:eq(4)").click(function(){
+			$('.titein:eq(4)').toggle()
+		})
+		$(".li:eq(5)").click(function(){
+			$('.titein:eq(5)').toggle()
+		})
+		$(".li:eq(6)").click(function(){
+			$('.titein:eq(6)').toggle()
+		})
+		
+	</script>
+</html>
